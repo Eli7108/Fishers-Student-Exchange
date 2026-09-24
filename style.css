@@ -1,0 +1,16 @@
+.hamburgButton {
+    position: absolute;
+    width: 25%;
+    top: 2.5%;
+    margin-right: 0%;
+    margin-left: 75%;
+}
+
+.hamburgContent {
+    display: none;
+    text-align: center;
+}
+/* Changes the scaling of each element depending on the device being used to view the website */
+@media screen {
+    
+}
