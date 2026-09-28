@@ -1,16 +1,62 @@
-.hamburgButton {
-    position: absolute;
+h2 {
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.inventoryFeed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding-bottom: 30%;
+    border: 5px solid #000000;
+    border-radius: 5%;
+    margin-left: 25%;
     width: 25%;
-    top: 2.5%;
-    margin-right: 0%;
-    margin-left: 75%;
+}
+
+.hamburgButton {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    height: auto;
+    cursor: pointer;
 }
 
 .hamburgContent {
     display: none;
     text-align: center;
 }
+
 /* Changes the scaling of each element depending on the device being used to view the website */
-@media screen {
-    
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 0%;
+    }
+    .hamburgButton{
+        width: 25%;
+    }
+    .filter {
+        margin-left: 0%;
+    }
+    .inventoryFeed {
+        width: 50%;
+        margin-left: 0%;
+        border: 2px solid #000000;
+        padding-bottom: 70%;
+    }
 }
