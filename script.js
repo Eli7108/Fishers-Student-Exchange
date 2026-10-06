@@ -7,3 +7,13 @@ document.querySelectorAll('.hamburgButton').forEach(button => {
       content.style.display = content.style.display === 'block' ? 'none' : 'block';
     });
 });
+
+document.querySelectorAll('.filterButton').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    document.querySelectorAll('.filterContent').forEach(drop => {
+      if (drop !== content) drop.style.display = 'none';
+    });
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  });
+});

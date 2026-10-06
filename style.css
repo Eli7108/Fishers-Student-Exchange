@@ -20,12 +20,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 2%;
     gap: 2%;
-    padding-bottom: 30%;
     border: 5px solid #000000;
     border-radius: 5%;
-    margin-left: 25%;
-    width: 25%;
+    margin-left: 15%;
+    width: 65%;
 }
 
 .hamburgButton {
@@ -39,6 +39,78 @@ h2 {
 .hamburgContent {
     display: none;
     text-align: center;
+}
+
+.filterWrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 2%;
+}
+
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    margin-bottom: 4%;
+}
+
+.box {
+    width: 20%;
+    border: 1px solid #000000;
+    border-radius: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.itemName {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid lightgray;
+}
+
+.itemDetails {
+    font-size: 1.25rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* styling for items.html */
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.displayBox {
+    width: 50%;
+    border: 1px solid #000000;
+    border-radius: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.smallDisplayBox {
+    width: 25%;
+    border: 1px solid #000000;
+    border-radius: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 37.5%;
 }
 
 /* Changes the scaling of each element depending on the device being used to view the website */
