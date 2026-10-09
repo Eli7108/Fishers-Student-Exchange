@@ -1,20 +1,4 @@
-h2 {
-    font-size: 2rem;
-    margin-top: 2%;
-    margin-left: 25%;
-    margin-bottom: 2%;
-}
-
-.filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    margin-bottom: 2%;
-    margin-left: 25%;
-    cursor: pointer;
-}
-
+/* styling for index.html */
 .inventoryFeed {
     display: flex;
     flex-wrap: wrap;
@@ -25,20 +9,9 @@ h2 {
     border: 5px solid #000000;
     border-radius: 5%;
     margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
     width: 65%;
-}
-
-.hamburgButton {
-    display: block;
-    margin: 0 auto;
-    width: 10%;
-    height: auto;
-    cursor: pointer;
-}
-
-.hamburgContent {
-    display: none;
-    text-align: center;
 }
 
 .filterWrapper {
@@ -46,7 +19,21 @@ h2 {
     justify-content: left;
     align-items: center;
     gap: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 2%;
+}
+
+.filterButton {
+    padding: 1%;
+    border: 1px solid #000000;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.filterContent {
+    display: none;
+    text-align: center;
 }
 
 .boxContainer {
@@ -82,8 +69,23 @@ h2 {
     margin-bottom: 5%;
 }
 
+.otherInfo {
+    font-size: 1.25rem;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.aboutPageLink {
+    padding: 2%;
+}
+
+.helpPageLink {
+    padding: 2%;
+}
+
 /* styling for items.html */
-.imageWrapper {
+.imgWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,44 +93,35 @@ h2 {
     margin-bottom: 2%;
 }
 
-.displayBox {
+.imgBox {
     width: 50%;
     border: 1px solid #000000;
     border-radius: 5%;
     display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 25%;
+    align-items: left;
 }
 
-.smallDisplayBox {
-    width: 25%;
+.smallImgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.smallImgBox {
+    width: 50%;
     border: 1px solid #000000;
     border-radius: 5%;
     display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 37.5%;
 }
 
 /* Changes the scaling of each element depending on the device being used to view the website */
 @media screen and (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem;
-        margin-left: 0%;
-    }
-    .hamburgButton{
-        width: 25%;
-    }
-    .filter {
-        margin-left: 0%;
-    }
+
     .inventoryFeed {
         width: 50%;
         margin-left: 0%;
         border: 2px solid #000000;
-        padding-bottom: 70%;
     }
 }
