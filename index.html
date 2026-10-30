@@ -19,11 +19,30 @@
         </td>
 
         <td width="15%" align="center">
-            <a href="login.html">Sign In</a>
+            <div class="loginWrapper">
+                <button class="loginButton">
+                    <b>Sign In</b>
+                </button>
+                <div class="loginContent">
+                    <form action="" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your Username" required><br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
         </td>
 
         <td width="15%" align="right">
-            <a href="cart.html">🛒 Cart</a>
+            <div class="cartWrapper">
+                <button class="cartButton">
+                    <b>🛒 Cart</b>
+                </button>
+                <div class="cartContent">
+                    <ul id="resultList"></ul>
+                </div>
         </td>
     </tr>
 </table>
@@ -55,40 +74,35 @@
             <div class="box">
                 <img src="" width="100%" height="200px">
                 <br>
-                <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
+                <h3 class="itemName">Colored Pencils</h3>
+                <div class="checkoutButton">
+                    <a href="items.html" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
             </div>
             <div class="box">
                 <img src="" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
+                <div class="checkoutButton">
+                    <a href="items.html" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
+                </div>
             </div>
             <div class="box">
                 <img src="" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
-            </div>
-        </div>
-        <div class="boxContainer">
-            <div class="box">
-                <img src="" width="100%" height="200px">
-                <br>
-                <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
-            </div>
-            <div class="box">
-                <img src="" width="100%" height="200px">
-                <br>
-                <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
-            </div>
-            <div class="box">
-                <img src="" width="100%" height="200px">
-                <br>
-                <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="boxContainer">
@@ -96,19 +110,66 @@
                 <img src="" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
             </div>
             <div class="box">
                 <img src="" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
+                </div>
             </div>
             <div class="box">
                 <img src="" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Item Name</h3>
-                <p class="itemDetails">Details <b>></b></p>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="boxContainer">
+            <div class="box">
+                <img src="" width="100%" height="200px">
+                <br>
+                <h3 class="itemName">Item Name</h3>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="" width="100%" height="200px">
+                <br>
+                <h3 class="itemName">Item Name</h3>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="" width="100%" height="200px">
+                <br>
+                <h3 class="itemName">Item Name</h3>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
