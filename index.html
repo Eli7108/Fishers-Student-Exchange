@@ -39,6 +39,7 @@
             <div class="cartWrapper">
                 <button class="cartButton">
                     <b>🛒 Cart</b>
+                    <span id="cartCount">0</span>
                 </button>
                 <div class="cartContent">
                     <ul id="resultList"></ul>
@@ -63,6 +64,7 @@
         <div class="filterWrapper">
             <button class="filterButton">Filter</button>
             <div class="filterContent">
+                <button id="all">All</button>
                 <button id="book">Books</button>
                 <button id="pen">Pens/Pencils</button>
                 <button id="math">Math Tools</button>
@@ -71,22 +73,52 @@
         </div>
 <!--each box container holds a row of items-->
         <div class="boxContainer">
-            <div class="box">
-                <img src="" width="100%" height="200px">
+            <div class="box" data-category="pen">
+                <img src="Images/Crayola-Colored-Pencils-Assorted-Colors-Pre-sharpened-Adult-Coloring-24-Count_29d6065e-6ce2-495c-9efd-d62b708f2dd6.ee96539a39319819687b314f5fe87f17.jpeg" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Colored Pencils</h3>
                 <div class="checkoutButton">
-                    <a href="items.html" class="itemDetails">
+                    <a href="itemsPens.html" class="itemDetails">
                         Details <b>></b>
                     </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
+            <div class="box" data-category="math">
+                <img src="Images/Texas-Instruments-TI-30XIIS-Two-Line-Scientific-Calculator-High-School-and-College_d8e870fc-1aa9-46ab-8a55-61195404ab93.3385c2f7d6eb9d63ee2753aa8efb657d.jpeg" width="100%" height="200px">
+                <br>
+                <h3 class="itemName">Calculator</h3>
+                <div class="checkoutButton">
+                    <a href="itemsMath.html" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="box" data-category="textbook">
+                <img src="Images/ncert20science20class20820textbook20pdf.jpg">
+                <h3 class="itemName">Item Name</h3>
+                <div class="checkoutButton">
+                    <a href="itemsTextbook.html" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="boxContainer">
             <div class="box">
                 <img src="" width="100%" height="200px">
                 <br>
                 <h3 class="itemName">Item Name</h3>
                 <div class="checkoutButton">
-                    <a href="items.html" class="itemDetails">
+                    <a href="" class="itemDetails">
                         Details <b>></b>
                     </a>
                     <button onclick="addToList()" class="add">
@@ -102,6 +134,22 @@
                     <a href="" class="itemDetails">
                         Details <b>></b>
                     </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="" width="100%" height="200px">
+                <br>
+                <h3 class="itemName">Item Name</h3>
+                <div class="checkoutButton">
+                    <a href="" class="itemDetails">
+                        Details <b>></b>
+                    </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
         </div>
@@ -114,6 +162,9 @@
                     <a href="" class="itemDetails">
                         Details <b>></b>
                     </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
             <div class="box">
@@ -137,41 +188,13 @@
                     <a href="" class="itemDetails">
                         Details <b>></b>
                     </a>
+                    <button onclick="addToList()" class="add">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="boxContainer">
-            <div class="box">
-                <img src="" width="100%" height="200px">
-                <br>
-                <h3 class="itemName">Item Name</h3>
-                <div class="checkoutButton">
-                    <a href="" class="itemDetails">
-                        Details <b>></b>
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="" width="100%" height="200px">
-                <br>
-                <h3 class="itemName">Item Name</h3>
-                <div class="checkoutButton">
-                    <a href="" class="itemDetails">
-                        Details <b>></b>
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="" width="100%" height="200px">
-                <br>
-                <h3 class="itemName">Item Name</h3>
-                <div class="checkoutButton">
-                    <a href="" class="itemDetails">
-                        Details <b>></b>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <button class="loadMoreButton">Load More</button>
     </div>
     <footer class="otherInfo" align="right">
         <a href="about.html" class="aboutPageLink">About Us</a>

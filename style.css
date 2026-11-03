@@ -328,7 +328,7 @@ form button[type="submit"]:active, input[type="submit"]:active,
     font-weight: 700;
 }
 .checkoutButton { margin-top: auto; padding: 0 1.25rem 1.25rem; cursor: auto; }
-.itemDetails {
+.itemDetails, .add {
     display: inline-flex;
     align-items: center;
     justify-content: center;
