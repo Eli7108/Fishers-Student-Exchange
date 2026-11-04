@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--The navigation bar-->
 <head>
     <table width="100%" cellpadding="15">
     <tr>
@@ -17,7 +18,7 @@
                 <button type="submit">Search</button>
             </form>
         </td>
-
+        <!--The login form-->
         <td width="15%" align="center">
             <div class="loginWrapper">
                 <button class="loginButton">
@@ -34,12 +35,12 @@
                 </div>
             </div>
         </td>
-
+        <!--The cart-->
         <td width="15%" align="right">
             <div class="cartWrapper">
                 <button class="cartButton">
                     <b>🛒 Cart</b>
-                    <span id="cartCount">0</span>
+                    <span id="cartCount"></span>
                 </button>
                 <div class="cartContent">
                     <ul id="resultList"></ul>
@@ -101,7 +102,7 @@
             </div>
             <div class="box" data-category="textbook">
                 <img src="Images/ncert20science20class20820textbook20pdf.jpg">
-                <h3 class="itemName">Item Name</h3>
+                <h3 class="itemName">Science Textbook</h3>
                 <div class="checkoutButton">
                     <a href="itemsTextbook.html" class="itemDetails">
                         Details <b>></b>
@@ -113,10 +114,10 @@
             </div>
         </div>
         <div class="boxContainer">
-            <div class="box">
-                <img src="" width="100%" height="200px">
+            <div class="box" data-category="book">
+                <img src="Images/To_Kill_A_Mockingbird.webp" width="100%" height="200px">
                 <br>
-                <h3 class="itemName">Item Name</h3>
+                <h3 class="itemName">To Kill A Mockingbird</h3>
                 <div class="checkoutButton">
                     <a href="" class="itemDetails">
                         Details <b>></b>
@@ -126,10 +127,10 @@
                     </button>
                 </div>
             </div>
-            <div class="box">
-                <img src="" width="100%" height="200px">
+            <div class="box" data-category="textbook">
+                <img src="Images/anatomy.jpeg" width="100%" height="200px">
                 <br>
-                <h3 class="itemName">Item Name</h3>
+                <h3 class="itemName">Anatomy Textbook</h3>
                 <div class="checkoutButton">
                     <a href="" class="itemDetails">
                         Details <b>></b>
@@ -139,10 +140,10 @@
                     </button>
                 </div>
             </div>
-            <div class="box">
-                <img src="" width="100%" height="200px">
+            <div class="box" data-category="pen">
+                <img src="Images/pencil_set.jpg" width="100%" height="200px">
                 <br>
-                <h3 class="itemName">Item Name</h3>
+                <h3 class="itemName">Mechanical Pencil Set</h3>
                 <div class="checkoutButton">
                     <a href="" class="itemDetails">
                         Details <b>></b>
@@ -194,7 +195,6 @@
                 </div>
             </div>
         </div>
-        <button class="loadMoreButton">Load More</button>
     </div>
     <footer class="otherInfo" align="right">
         <a href="about.html" class="aboutPageLink">About Us</a>

@@ -35,7 +35,7 @@ let shoppingCart = [];
 
 // Function to add an item to the shopping cart
 function addToList(value) {
-    if (!value.trim()) return; // Prevent adding empty items
+    if (!value.trim()) return;
 
     const list = document.getElementById('resultList');
     const item = document.createElement('li');
@@ -78,9 +78,9 @@ filterButtons.forEach(button => {
         // Loop through all boxes and toggle their visibility
         boxes.forEach(box => {
             if (category === 'all' || box.dataset.category === category) {
-                box.style.display = 'block'; // Show matching boxes
+                box.style.display = 'block';
             } else {
-                box.style.display = 'none'; // Hide non-matching boxes
+                box.style.display = 'none';
             }
         });
     });
